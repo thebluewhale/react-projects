@@ -1,0 +1,37 @@
+.app-background {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nav-bg-image {
+    background-image: url('./../static/images/theme_ntp_background.png');
+    background-size: cover;
+}
+
+.first-detail {
+    background: linear-gradient(pink, white);
+}
+
+.second-detail {
+    background: white;
+}
+
+.third-detail {
+    background: linear-gradient(white, pink);
+}
+
+.preloader-background {
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.preloader-container {
+    position: relative;
+    top: 50%;
+}

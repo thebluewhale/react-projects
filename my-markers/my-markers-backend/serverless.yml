@@ -1,0 +1,96 @@
+service: my-markers-backend
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-northeast-2
+
+#  environment:
+#    variable1: value1
+
+#package:
+#  include:
+#    - include-me.js
+#    - include-me-dir/**
+#  exclude:
+#    - exclude-me.js
+#    - exclude-me-dir/**
+
+functions:
+# usern DB functions
+  addNewUser:
+    handler: src/user.addNewUser
+    events:
+      - http:
+          path: /user/addnewuser
+          method: post
+          cors: true
+  updateUser:
+    handler: src/user.updateUser
+    events:
+      - http:
+          path: /user/updateuser/{user_id}
+          method: patch
+  deleteUSer:
+    handler: src/user.deleteUser
+    events:
+      - http:
+          path: /user/deleteuser/{user_id}
+          method: delete
+  login:
+    handler: src/user.login
+    events:
+      - http:
+          path: /user/login
+          method: post
+          cors: true
+  logout:
+    handler: src/user.logout
+    events:
+      - http:
+          path: /user/logout
+          method: post
+  checkToken:
+    handler: src/user.checkToken
+    events:
+      - http:
+          path: /user/checktoken
+          method: post
+          cors: true
+# marker DB functions
+  addNewMarker:
+    handler: src/marker.addNewMarker
+    events:
+      - http:
+          path: /marker/addnewmarker
+          method: post
+          cors: true
+  getAllMarkers:
+    handler: src/marker.getAllMarkers
+    events:
+      - http:
+          path: /marker/getallmarkers/{username}
+          method: get
+          cors: true
+  getMarkersByKeyword:
+    handler: src/marker.getMarkersByKeyword
+    events:
+      - http:
+          path: /marker/getmarkers/bykeyword
+          method: get
+          cors: true
+  updateMarker:
+    handler: src/marker.updateMarker
+    events:
+      - http:
+          path: /marker/updatemarker/{marker_id}
+          method: patch
+          cors: true
+  deleteMarker:
+    handler: src/marker.deleteMarker
+    events:
+      - http:
+          path: /marker/deletemarker/{marker_id}
+          method: delete
+          cors: true

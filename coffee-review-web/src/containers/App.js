@@ -1,0 +1,31 @@
+import React from 'react';
+import {Header} from 'components';
+import {connect} from 'react-redux';
+import {browserHistory} from 'react-router';
+
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<div>
+				<Header/>
+				{this.props.children}
+			</div>
+		);
+	}
+}
+
+const mapStateToProps = (state) => {
+	return {
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

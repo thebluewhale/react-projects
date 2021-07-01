@@ -1,0 +1,14 @@
+{
+    "starbucks" : {
+        "brandCode" : 1,
+        "brandName" : "starbucks",
+        "menu" : {
+            "espresso" : [
+                "espresso", "americano", "latte"
+            ],
+            "others" : [
+                "fizio", "blended"
+            ]
+        }   
+    }
+}
