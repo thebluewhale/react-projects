@@ -1,0 +1,107 @@
+.home h1{
+  color: darkseagreen;
+}
+
+.button-size {
+	width: 30%;
+	height: 100%;
+}
+
+.login-body {
+	margin: auto;
+	margin-top: 5%;
+	width: 90%;
+	max-width: 500px;
+}
+
+.login-upper-margin {
+	margin-top: 20px;
+}
+
+.create-account-body {
+	margin: auto;
+	margin-top: 5%;
+	width: 90%;
+	max-width: 500px;
+}
+
+.create-account-upper-margin {
+	margin-top: 10px;
+}
+
+.user-detail-body {
+	margin: auto;
+	margin-top: 5%;
+	width: 90%;
+	max-width: 500px;
+}
+
+.user-detail-margin {
+	margin-top: 20px;
+}
+
+.edit-account-upper-margin {
+	margin-top: 10px;
+}
+
+.post-upper-margin {
+	margin-top: 20px;
+}
+
+.post-write-fieldset-border {
+	border-color: white;
+}
+
+.post-content-size {
+	margin: auto;
+	margin-top: 5%;
+	min-height: 200px;
+	max-height: 1000px;
+}
+
+.post-footer {
+	margin: auto;
+	height: 30px;
+	width: 100%;
+}
+
+.post-icon {
+	float: right;
+	margin: 10px 10px 10px 10px;
+}
+
+.post-writer {
+	float: left;
+	margin: 15px 10px 10px 10px;
+}
+
+.allusers-body {
+	margin: auto;
+	margin-top: 5%;
+	width: 90%;
+	max-width: 400px;
+}
+
+.post-body {
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.post-card {
+	margin: auto;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.post-each-card {
+	width: 100%;
+	margin: auto;
+}
+
+.text-ellipsis {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

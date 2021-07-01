@@ -1,0 +1,128 @@
+body {
+	background-color: #e8eaf6;
+	overflow-x: hidden;
+}
+
+.logo {
+	text-align: center;
+	font-weight: 100;
+	font-size: 80px;
+	-webkit-user-select: none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.home {
+	margin: 50px auto;
+	text-align: center;
+	width: 500px;
+	font-size: 25px;
+}
+
+.auth {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.auth .card {
+	width: 400px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+	.auth .card {
+		width: 100%;
+	}
+
+	.logo {
+		font-size: 60px;
+	}
+}
+
+.auth .header {
+	font-size: 18px;
+}
+
+.auth .row {
+	margin-bottom: 0px;
+}
+
+.auth .username {
+	margin-top : 0px;
+}
+
+.auth .btn {
+	width: 90%;
+}
+
+.auth .footer {
+	border-top: 1px solid #E9E9E9;
+	padding-bottom: 21px;
+}
+
+.search {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.search .card {
+	width: 400px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+	.search .card {
+		width: 100%;
+	}
+
+	.logo {
+		font-size: 60px;
+	}
+}
+
+.search .header {
+	font-size: 18px;
+}
+
+.search .row {
+	margin-bottom: 0px;
+}
+
+.search .username {
+	margin-top : 0px;
+}
+
+.search .btn {
+	width: 90%;
+}
+
+.search .footer {
+	border-top: 1px solid #E9E9E9;
+	padding-bottom: 21px;
+}
+
+.chatwindow .current-partner {
+	font-size: 20px;
+	margin: 15px 0px 15px 0px;
+}
+
+.chatwindow .message-input {
+	margin: 15px 0px 15px 0px;
+}
+
+.right-text {
+	text-align: right;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.chatwindow .full-width {
+	width: 100%;
+}

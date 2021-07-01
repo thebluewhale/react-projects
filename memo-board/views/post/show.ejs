@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<% include ../partials/head %>
+	</head>
+
+	<body>
+		<div class="post-body">
+			<div class="w3-card-4 post-upper-margin">
+				<div>
+					<h2 class="w3-container w3-blue-grey"><b><%= posts.title %></b></h3>
+				</div>
+				<div class="w3-container">
+					<% if(posts.author.username) %>
+						<span>written by <b><%= posts.author.username %></b></span>
+				</div>
+				<div class="w3-container">
+					<div>
+						<span>created at [ <%= posts.createdDate %>, <%=posts.createdTime %> ]</span>
+					</div>
+					<div>
+						<% if(posts.updatedAt) %>
+							<span>updated at [ <%= posts.updatedDate %>, <%= posts.updatedTime %> ]</span>
+					</div>
+				</div>
+				<div class="post-upper-margin post-content-size">
+					<h3 class="w3-container"><%= posts.content %><h3>
+				</div>
+			</div>
+			<% if(isAuthenticated && (currentUser.id == posts.author.id)) { %>
+			<a href='/posts/<%= posts._id %>/edit'>
+				<button type="button" class="w3-btn w3-gray button-size post-upper-margin">
+					Edit
+				</button>
+			</a>
+			<form action="/posts/<%= posts._id %>?_method=delete" method="post">
+				<a href="#" onclick='confirm("Delete this post?") ? this.parentElement.submit() : null;'>
+					<button type="button" class="w3-btn w3-gray button-size post-upper-margin">
+					Delete
+				</button>
+				</a>
+			</form>
+			<% } %>
+			<a href='/posts/'>
+				<button type="button" class="w3-btn w3-gray button-size post-upper-margin">
+					List
+				</button>
+			</a>
+		</div>
+	</body>
+
+</html>
