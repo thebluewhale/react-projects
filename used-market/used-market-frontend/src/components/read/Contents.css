@@ -1,0 +1,25 @@
+.contents-title {
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+.contents-info {
+    font-size: 2.7em;
+    right: 10px;
+}
+
+.contents-padding {
+    margin: 50px 30px 50px 30px;
+}
+
+#readBoard {
+    min-height: 70vh;
+}
+
+.contents-back-icon:hover {
+    cursor: pointer;
+}
+
+.contents-bookmark-icon:hover {
+    cursor: pointer;
+}

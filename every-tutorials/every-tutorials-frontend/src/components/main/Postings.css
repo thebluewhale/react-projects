@@ -1,0 +1,12 @@
+.posting-container:hover {
+    cursor: pointer;
+}
+
+.posting-footer {
+    border-top: 1px solid black;
+    height: 4rem;
+}
+
+.posting-hover:hover {
+    background-color: black;
+}

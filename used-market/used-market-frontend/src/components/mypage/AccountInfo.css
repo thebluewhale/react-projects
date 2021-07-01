@@ -1,0 +1,9 @@
+.account-info-container {
+    padding: 0 20px 0 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.account-content {
+    border: 5px solid #263238;
+}

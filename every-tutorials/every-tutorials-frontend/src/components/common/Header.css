@@ -1,0 +1,4 @@
+.header-bg-image {
+    background-image: url('./../../static/images/header_bg_image.png');
+    background-size: cover;
+};

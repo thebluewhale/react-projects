@@ -1,0 +1,9 @@
+.bookmarked-posting-container {
+    padding: 0 20px 0 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.bookmarked-posting-contents {
+    cursor: pointer;
+}

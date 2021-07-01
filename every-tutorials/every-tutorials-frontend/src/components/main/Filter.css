@@ -1,0 +1,15 @@
+.filter-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.filter-container:hover {
+    cursor: pointer;
+}
+
+.filter-border {
+    border: 3px solid black;
+}
+.filter-border:hover {
+    border: 3px solid white;
+}

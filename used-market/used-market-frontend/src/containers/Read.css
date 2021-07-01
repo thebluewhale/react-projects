@@ -1,0 +1,19 @@
+.read-leftbar-container {
+    /*
+    width: 25%;
+    float: left;
+    */
+}
+
+.read-editor-container {
+    /*
+    width: 75%;
+    float: right;
+    */
+}
+
+.preloader-container {
+    left: 50%;
+    top: 50%;
+    position: fixed;
+}

@@ -1,0 +1,132 @@
+body {
+	background-color: #e8eaf6;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+.logo {
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.5em;
+	-webkit-user-select: none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.home {
+	margin: 30px auto;
+	width: 90%;
+	max-width: 800px;
+}
+
+.home .guidetext {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #d500f9;
+}
+
+.upload {
+	margin: 30px auto;
+	width: 90%;
+	max-width: 600px;
+}
+
+.movielist .guidetext {
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: bold;
+	color: #673ab7;
+}
+
+.movieclip .card-content {
+	width: 100%;
+	max-height: 500px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	padding: 5px 10px 5px 10px;
+}
+
+.movieclip .title {
+	font-size: 1.3em;
+	color: black;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+	color: #7e57c2;
+}
+
+.movieclip .owner {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #b39ddb;
+	cursor: default;
+}
+
+.movieclip .owner :hover {
+	color: #7e57c2;
+}
+
+.movieclip .deletebutton {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.movieclip .deletebutton .material-icons {
+	color: grey;
+}
+
+.movieclip .deletebutton :hover {
+	color: orange;
+}
+
+.movieclip .owner .dropdown-content-item {
+	text-align: center;
+	color: grey;
+}
+
+.movieclip .media {
+	margin: 10px 0 10px 0;
+	width: inherit;
+	height: 300px;
+	background-color: #b0bec5;
+}
+
+.movieclip .media .playbutton {
+	position: absolute;
+	margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	opacity: 0.5;
+}
+
+.movieclip .thumbnail {
+	width: inherit;
+	height: inherit;
+}
+
+.searchuser {
+	margin: 30px auto;
+	width: 90%;
+	max-width: 400px;
+}
+
+.searchuser .list {
+	width: inherit;
+	text-align: center;
+}
+
+.searchuser .list-item {
+	color: #673ab7;
+	cursor: default;
+}
+
+.searchuser .guidetext {
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: bold;
+	color: #673ab7;
+}
